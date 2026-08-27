@@ -752,6 +752,18 @@ footer.page-footer{
       <span class="loc path">Settings → Custom Pedal Buttons</span>
       <p>If your pedal has extra buttons beyond next/previous, assign one directly to Toggle Auto-Scroll, Pause/Resume Auto-Scroll, Half Page Down, or Half Page Up — press the physical button once while assigning it, and SureNotes learns which signal it sends.</p>
 
+      <h3>If your pedal misses the first press</h3>
+      <p>Most Bluetooth pedals go dormant after a period of inactivity to save battery, and <strong>the press that wakes the pedal is spent waking it</strong> — it doesn't reach SureNotes as a page turn. If you've gone a few minutes without turning a page, the next press or two can appear to do nothing, and then everything works normally again.</p>
+      <p>This is the pedal's own firmware, not SureNotes, and no app can prevent it — iPadOS owns the Bluetooth connection to a keyboard-style pedal. How long it takes varies a lot by model:</p>
+      <table class="pedal-sleep">
+        <tr><th>Pedal</th><th>Goes dormant after</th></tr>
+        <tr><td>PageFlip Firefly / Butterfly</td><td>30 minutes — effectively never during a set</td></tr>
+        <tr><td>Donner page turner</td><td>30 minutes while connected</td></tr>
+        <tr><td>Yueyinpu / Tavsou K24-01 and similar budget units</td><td>About 3 minutes, and not adjustable</td></tr>
+      </table>
+      <p>A three-minute timeout is short enough to fire between songs, which is why a cheap pedal can feel unreliable on stage while behaving perfectly at home. If you're gigging with one, a quick tap during a long intro or a spoken break keeps it awake — and if page turns matter to your show, a pedal with a 30-minute timeout is the real fix.</p>
+      <div class="tip"><strong>Check this before blaming the app:</strong> if the first press after a quiet stretch does nothing but every press after that works instantly, that's pedal dormancy. If presses are missed <em>while</em> you're actively turning pages, that's something else — please <a href="/support">report it</a>.</div>
+
       <h3>Pedal Profiles <span class="badge pro">Pro</span></h3>
       <span class="loc path">Settings → Pedal Profiles</span>
       <p>A profile bundles your control scheme and custom button assignments together, so switching pedals or setups is one tap instead of reconfiguring each piece separately. Save your current setup as a new profile, tap a profile to activate it, or update the active one after tweaking things. Your existing setup becomes a profile named "Default" automatically the first time you open this. Switching is manual — a profile doesn't yet auto-apply itself for a specific band or show.</p>
